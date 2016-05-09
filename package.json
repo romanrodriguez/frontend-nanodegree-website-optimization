@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/romanrodriguez/frontend-nanodegree-website-optimization#readme",
   "devDependencies": {
+    "apache-server-configs": "^2.14.0",
+    "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-pagespeed": "^2.0.0",
     "install": "^0.7.3",
     "load-grunt-tasks": "^3.5.0",
