@@ -5,7 +5,7 @@ This projects consists of improving an online portfolio for speed by optimizing 
 ### Optimizations
 ####Part 1: Optimize PageSpeed Insights score for index.html
 
-Results achieved: PageSpeed Insights on Desktop (95/100) and Mobile (96/100)
+Results achieved: PageSpeed Insights on Desktop (96/100) and Mobile (97/100)
 
 
 
