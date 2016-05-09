@@ -33,7 +33,7 @@ To optimize `views/pizza.html`, I modified `views/js/main.js` until the frames p
 3. Added `cachedScrollTop` outside the for loop in `updatePositions`.
 
 #### Tools used:
-[Grunt](http://gruntjs.com/)
-[CSS Minifier](http://cssminifier.com/)
-[JS Compress](http://jscompress.com/)
-[Kraken.io](http://kraken.io/)
+* [Grunt](http://gruntjs.com/)
+* [CSS Minifier](http://cssminifier.com/)
+* [JS Compress](http://jscompress.com/)
+* [Kraken.io](http://kraken.io/)
