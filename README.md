@@ -24,6 +24,7 @@ To optimize `views/pizza.html`, I modified `views/js/main.js` until the frames p
 
 * Inline CSS styling in `pizza.html`
 * Optimized Images
+* Modified CSS `.mover` in `style.css` and `pizza.html` inline CSS to increase the site's performance with hardware accelerated CSS.
 * Modifications to the `main.js` code:
 
 1. Modified the `changePizzaSizes` function with a new variable randomPizza, and moved the `dx` and `newwidth` variables outside the for loop with it for a more efficient loop.
