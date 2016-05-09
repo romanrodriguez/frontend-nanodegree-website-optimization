@@ -1,6 +1,6 @@
 ## Website Performance Optimization portfolio project
 
-Check the project's page at: [](http://romanrodriguez.github.io/frontend-nanodegree-website-optimization/)
+Check the project's page at: [http://romanrodriguez.github.io/frontend-nanodegree-website-optimization/](http://romanrodriguez.github.io/frontend-nanodegree-website-optimization/)
 
 This project consists of improving an online portfolio for speed by optimizing the critical rendering path and making the page render as quickly as possible.
 
