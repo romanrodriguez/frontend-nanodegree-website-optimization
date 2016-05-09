@@ -30,6 +30,17 @@ form {
     position: fixed;
     width: 256px;
     z-index: -1
+
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); /* GPU trigger for hardware accelerated CSS. */
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden; /* Enables hardware acceleration. Great for less powerful equipments. */
 }
 
 .randomPizzaContainer {
