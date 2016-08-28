@@ -29,6 +29,8 @@ form {
 .mover {
     position: fixed;
     width: 256px;
+    backface-visibility: hidden;
+    transform: translateZ(0);
     z-index: -1
 
     -webkit-transform: translateZ(0);
