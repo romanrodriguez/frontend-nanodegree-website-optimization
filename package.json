@@ -1,25 +1,19 @@
 {
   "name": "website-performance-optimization",
   "version": "1.0.0",
-  "description": "Website Optimizations",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-csso": "latest",
-    "gulp-clean": "latest",
-    "gulp-htmlmin": "latest",
-    "gulp-gh-pages": "latest",
-    "gulp-rename": "latest",
-    "gulp": "latest",
-    "gulp-image-resize": "latest",
-    "gulp-imagemin": "latest",
-    "gulp-responsive": "latest",
-    "gulp-serve": "latest",
-    "gulp-uglify": "latest"
-  },
-  "devDependencies": {
+  "description": "Website Performance Optimization",
+  "main": "index.js",
+    "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-gh-pages": "latest"
-  },
+    "gulp-clean": "^0.3.2",
+    "gulp-csso": "^2.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-image-resize": "^0.10.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

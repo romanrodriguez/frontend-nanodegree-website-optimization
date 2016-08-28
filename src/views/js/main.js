@@ -520,7 +520,7 @@ function updatePositions() {
     var items = document.getElementsByClassName('mover');
     var cachedScrollTop = document.body.scrollTop; // Moved outside the for loop to prevent it from being created every time the loop is executed.
     var phase; // Moved outside the for loop to prevent it from being created every time the loop is executed.
-    for (var i = 0, len = < object / array > .length; i < len; i++) {
+    for (var i = 0, len = i < items.length; i < len; i++) {
         phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }

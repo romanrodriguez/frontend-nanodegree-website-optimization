@@ -88,7 +88,7 @@ gulp.task('images', ['clean'], function() {
 gulp.task('deploy', function() {
   return gulp.src(bases.dist + '/**/*')
     .pipe(ghPages());
-})
+});
 
 gulp.task('uglify', ['uglifyJS', 'uglifyCSS', 'uglifyHTML']);
 gulp.task('default', ['clean', 'uglify', 'images']);
