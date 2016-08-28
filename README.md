@@ -37,11 +37,3 @@ To optimize `views/pizza.html`, I modified `views/js/main.js` until the frames p
 4. Declared the phase variable in the `updatePositions` function outside the loop to prevent it from being created every time the loop is executed.
 
 5. Modified the Pizza Generator function `document.addEventListener` to be more efficient by reducing the number of pizzas generated to populate the page to the minimum required. Moved the elem variable outside the for loop to prevent it from being created every time the loop is executed. Added the movingPizzas1tag variable outside the for loop in the `addEventListener` function.
-
-
-#### Tools used:
-* [Gulp.js](http://gulpjs.com/)
-* [CSS Minifier](http://cssminifier.com/)
-* [JS Compress](http://jscompress.com/)
-* [Kraken.io](http://kraken.io/)
-* [Unminify](http://unminify.com)
