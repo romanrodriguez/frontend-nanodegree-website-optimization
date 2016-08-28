@@ -1,0 +1,36 @@
+{
+  "name": "website-performance-optimization",
+  "version": "1.0.0",
+  "description": "Website Optimizations",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-csso": "latest",
+    "gulp-clean": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-gh-pages": "latest",
+    "gulp-rename": "latest",
+    "gulp": "latest",
+    "gulp-image-resize": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-responsive": "latest",
+    "gulp-serve": "latest",
+    "gulp-uglify": "latest"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanrodriguez/frontend-nanodegree-website-optimization.git"
+  },
+  "author": "Roman Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanrodriguez/frontend-nanodegree-website-optimization/issues"
+  },
+  "homepage": "https://github.com/romanrodriguez/frontend-nanodegree-website-optimization#readme"
+}

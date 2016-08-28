@@ -27,14 +27,19 @@ To optimize `views/pizza.html`, I modified `views/js/main.js` until the frames p
 * Modified CSS `.mover` in `views/style.css` and `pizza.html` inline CSS to increase the site's performance with hardware accelerated CSS and added vendor prefixes for better browser compatibility.
 * Modifications to the `main.js` code:
 
-1. Modified the `changePizzaSizes` function with a new variable randomPizza, and moved the `dx` and `newwidth` variables outside the for loop with it for a more efficient loop.
+1. Modified the `changeSliderLabel` function as the document.getElementById() Web API call is faster than document.querySelector() and the `randomPizza` and `updatePositions` functions were modified with document.getElementsByClassName() instead of querySelectorAll() as it is also faster that way.
 
-2. Modified the Pizza Generator function `document.addEventListener` to be more efficient by reducing the number of pizzas generated to populate the page to the minimum required. Also removed the process of resizing. 
+2. Modified the `changePizzaSizes` function with a new variable randomPizza, and moved the `dx` and `newwidth` variables outside the for loop with it for a more efficient loop.
 
-3. Added `cachedScrollTop` outside the for loop in `updatePositions`.
+3. Declared the `pizzasDiv` variable outside the loop, so the function only makes one DOM call. Declared the phase variable in the `updatePositions` function outside the loop to prevent it from being created every time the loop is executed.
+
+3. Modified the Pizza Generator function `document.addEventListener` to be more efficient by reducing the number of pizzas generated to populate the page to the minimum required. Also removed the process of resizing and moved the elem variable outside the for loop to prevent it from being created every time the loop is executed. 
+
+5. Added the movingPizzas1tag variable outside the for loop in the `addEventListener` function.
+
 
 #### Tools used:
-* [Grunt](http://gruntjs.com/)
+* [Gulp.js](http://gulpjs.com/)
 * [CSS Minifier](http://cssminifier.com/)
 * [JS Compress](http://jscompress.com/)
 * [Kraken.io](http://kraken.io/)
