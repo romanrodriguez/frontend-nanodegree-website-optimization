@@ -7,7 +7,8 @@ This project consists of improving an online portfolio for speed by optimizing t
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
 ##### Results achieved: 
-PageSpeed Insights on Desktop (96/100) and Mobile (97/100)
+PageSpeed Insights on Desktop (97/100) and Mobile (95/100). User Experience 
+(100/100).
 
 ##### Optimizations performed:
 
@@ -31,11 +32,11 @@ To optimize `views/pizza.html`, I modified `views/js/main.js` until the frames p
 
 2. Modified the `changePizzaSizes` function with a new variable randomPizza, and moved the `dx` and `newwidth` variables outside the for loop with it for a more efficient loop.
 
-3. Declared the `pizzasDiv` variable outside the loop, so the function only makes one DOM call. Declared the phase variable in the `updatePositions` function outside the loop to prevent it from being created every time the loop is executed.
+3. Declared the `pizzasDiv` variable outside the loop, so the function only makes one DOM call. 
 
-3. Modified the Pizza Generator function `document.addEventListener` to be more efficient by reducing the number of pizzas generated to populate the page to the minimum required. Also removed the process of resizing and moved the elem variable outside the for loop to prevent it from being created every time the loop is executed. 
+4. Declared the phase variable in the `updatePositions` function outside the loop to prevent it from being created every time the loop is executed.
 
-5. Added the movingPizzas1tag variable outside the for loop in the `addEventListener` function.
+5. Modified the Pizza Generator function `document.addEventListener` to be more efficient by reducing the number of pizzas generated to populate the page to the minimum required. Moved the elem variable outside the for loop to prevent it from being created every time the loop is executed. Added the movingPizzas1tag variable outside the for loop in the `addEventListener` function.
 
 
 #### Tools used:
