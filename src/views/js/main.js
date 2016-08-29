@@ -468,11 +468,18 @@ var resizePizzas = function(size) {
         return dx;
     }
 
-    var randomPizza = document.getElementsByClassName("randomPizzaContainer"); // Moved variable outside the function to reduce iterations.
     // Iterates through pizza elements on the page and changes their widths
-    var dx = determineDx(randomPizza[0], size);
-    var newwidth = (randomPizza[0].offsetWidth + dx) + 'px';
-    var pizzaCount = randomPizza.length;
+    function changePizzaSizes(size) {
+        var randomPizza = document.getElementsByClassName("randomPizzaContainer");
+        var dx = determineDx(randomPizza[0], size);
+        var newwidth = (randomPizza[0].offsetWidth + dx) + 'px';
+        for (var i = pizzaCount.length; i--;) {
+            var pizzaCount = randomPizza.length;
+            pizzaCount[i].style.width = newwidth;
+        }
+    }
+
+    changePizzaSizes(size);
 
     // User Timing API is awesome
     window.performance.mark("mark_end_resize");
@@ -520,7 +527,7 @@ function updatePositions() {
     var items = document.getElementsByClassName('mover');
     var cachedScrollTop = document.body.scrollTop; // Moved outside the for loop to prevent it from being created every time the loop is executed.
     var phase; // Moved outside the for loop to prevent it from being created every time the loop is executed.
-    for (var i = 0, len = i < items.length; i < len; i++) {
+    for (var i = 0, len = items.length; i < len; i++) {
         phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }
