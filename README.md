@@ -28,7 +28,7 @@ To optimize `views/pizza.html`, I modified `views/js/main.js` until the frames p
 * Modified CSS `.mover` in `views/style.css` and `pizza.html` inline CSS to increase the site's performance with hardware accelerated CSS and added vendor prefixes for better browser compatibility.
 * Modifications to the `main.js` code:
 
-1. Modified the `changeSliderLabel` function as the document.getElementById() Web API call is faster than document.querySelector() and the `randomPizza` and `updatePositions` functions were modified with document.getElementsByClassName() instead of querySelectorAll() as it is also faster that way.
+1. Modified the `changeSliderLabel`  and the `determineDx` functions as the document.getElementById() Web API call is faster than document.querySelector() and the `randomPizza` and `updatePositions` functions were modified with document.getElementsByClassName() instead of querySelectorAll() as it is also faster that way.
 
 2. Modified the `changePizzaSizes` function with a new variable randomPizza, and moved the `dx` and `newwidth` variables outside the for loop with it for a more efficient loop.
 
